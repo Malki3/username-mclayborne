@@ -4,10 +4,10 @@
 - **Name:** Malcolm Clayborne
 - **Course:** CPSC-298-01
 - **Assignment:** Username Validation
-- **Date:** [Date of Completion]
+- **Date:** 01/20/25
 
 ## Program Description
-[Write 2-3 sentences in your own words describing what this script does and its purpose. Explain the problem it solves and how it works at a high level.]
+This script asks the user to enter a username and checks whether it follows the required rules for valid usernames. It keeps asking the user to try again until the input follows all of the guidelines. Once satisfied the script thanks the user and will exit.
 
 ## Username Requirements
 This script validates usernames according to the following rules:
@@ -28,10 +28,7 @@ To test with the provided input file:
 
 ## How the Script Works
 [Explain in 3-5 sentences how your script validates usernames. Include information about:]
-- The use of the `while` loop
-- The `grep` command with extended regular expressions
-- The meaning of the `-E` and `-v` flags
-- The redirect `> /dev/null 2>&1`
+The while loop runs while the username is invalid and will end once it gets a valid username. The grep command checks the username where -e enambles extended regex, -q suppresses output and uses only the exit status and -v inverts the match so the loop will continue. When grep finds a match the loop ends and the script continues.
 
 ## Regular Expression Pattern
 The validation uses the following regular expression pattern:
@@ -45,9 +42,9 @@ This pattern ensures that:
 
 ## Testing Results
 [Describe your testing process and results. Include:]
-- Example valid usernames you tested (at least two)
-- Example invalid usernames and why they fail (at least two)
-- How you used the username-input file to test
+- Valid username examples: malki3, devmiller298
+- JackandJill, 123
+- ran ./username.sh < username-input
 
 ## Challenges and Solutions
 [Optional: Describe any challenges you encountered while creating this script and how you solved them. This could include debugging issues, understanding regular expressions, or Git workflow problems.]
