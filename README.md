@@ -1,8 +1,8 @@
 # README for Username Validation Script
 
 ## Author Information
-- **Name:** [Your Full Name]
-- **Course:** [Course Number and Name]
+- **Name:** Malcolm Clayborne
+- **Course:** CPSC-298-01
 - **Assignment:** Username Validation
 - **Date:** [Date of Completion]
 
